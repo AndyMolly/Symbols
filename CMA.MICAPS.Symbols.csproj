@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CCD4D6E-AB95-48BA-A88F-12AFDCE7FBBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMA.MICAPS.Symbols</RootNamespace>
+    <AssemblyName>CMA.MICAPS.Symbols</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_GFE|AnyCPU'">
+    <OutputPath>bin\Release_GFE\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_GFE|x86'">
+    <OutputPath>..\Bin\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_GFE|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_GFE\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_GFE|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CMA.MICAPS.Algorithms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a29ad7b0dbcafea3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="CMA.MICAPS.Box2D, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2ff016210c417c10, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.Box2D.dll</HintPath>
+    </Reference>
+    <Reference Include="CMA.MICAPS.GMap, Version=2.0.4.0, Culture=neutral, PublicKeyToken=1c9cf4747d72a4f4, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.GMap.dll</HintPath>
+    </Reference>
+    <Reference Include="CMA.MICAPS.Infrastructures, Version=2.5.0.0, Culture=neutral, PublicKeyToken=6739cc5ffa80b2df, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.Infrastructures.dll</HintPath>
+    </Reference>
+    <Reference Include="CMA.MICAPS.Services, Version=2.5.0.0, Culture=neutral, PublicKeyToken=934561946d55e0a4, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="CMA.MICAPS.Styles, Version=2.5.0.0, Culture=neutral, PublicKeyToken=f681d98730a3bb93, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CMA.MICAPS.Styles.dll</HintPath>
+    </Reference>
+    <Reference Include="Math3D, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Math3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="24hourWeather.cs" />
+    <Compile Include="ArrowHeadFilledLineSymbol.cs" />
+    <Compile Include="ArrowHeadLineSymbol.cs" />
+    <Compile Include="ArrowHeadTailFilledLineSymbol.cs" />
+    <Compile Include="ArrowHeadTailLineSymbol.cs" />
+    <Compile Include="ArrowMidLineSymbol.cs" />
+    <Compile Include="BrokenLine.cs" />
+    <Compile Include="ColdFront.cs" />
+    <Compile Include="CoveredArea.cs" />
+    <Compile Include="DashDotDotLineSymbol.cs" />
+    <Compile Include="DashDotLineSymbol.cs" />
+    <Compile Include="DashLineSymbol.cs" />
+    <Compile Include="DengZhiXian.cs" />
+    <Compile Include="DotLineSymbol.cs" />
+    <Compile Include="DoubleLineSymbol.cs" />
+    <Compile Include="EmptyCircle.cs" />
+    <Compile Include="FenLiuQu.cs" />
+    <Compile Include="FrontWithLabel.cs" />
+    <Compile Include="FrostLineSymbol.cs" />
+    <Compile Include="GanQinRu.cs" />
+    <Compile Include="GanShe.cs" />
+    <Compile Include="HatchStyle.cs" />
+    <Compile Include="ISymbolAssembler.cs" />
+    <Compile Include="JiHeLiu.cs" />
+    <Compile Include="JiLiuHeNew.cs" />
+    <Compile Include="LabelPosition.cs" />
+    <Compile Include="LabelSplitLine.cs" />
+    <Compile Include="LineAndQuads.cs" />
+    <Compile Include="LineAndCross.cs" />
+    <Compile Include="LineAndHalfCircle.cs" />
+    <Compile Include="LineAndSoildCircle.cs" />
+    <Compile Include="LineAndTriangle.cs" />
+    <Compile Include="LineSymbol.cs" />
+    <Compile Include="OcclusionFront.cs" />
+    <Compile Include="PolygonSymbol.cs" />
+    <Compile Include="PolygonWeather.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QiangJiangShuiArea.cs" />
+    <Compile Include="HatchFullPolygon.cs" />
+    <Compile Include="ShiZhou.cs" />
+    <Compile Include="ShuangGanAndShuangxian.cs" />
+    <Compile Include="SingleArrowLineSymbol.cs" />
+    <Compile Include="SlashFillPolygonSymbol.cs" />
+    <Compile Include="SoildCircle.cs" />
+    <Compile Include="SoildLineAndCircle.cs" />
+    <Compile Include="SolidLineSymbol.cs" />
+    <Compile Include="StationaryFront.cs" />
+    <Compile Include="SymbolFactory.cs" />
+    <Compile Include="SymbolMesh.cs" />
+    <Compile Include="LabelLineSymbol.cs" />
+    <Compile Include="WarmFront.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HengXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HuoJu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\KunChong.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ShuXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\WangGe.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\XieFangKuai.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\YouXieXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZuoXieXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CuHengXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CuShuXian.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DianZhen.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
